@@ -1,7 +1,10 @@
 {
 	"powers": [
 		"breezeborn:made_of_air",
-		"breezeborn:constricted_form"
+		"breezeborn:constricted_form",
+		"breezeborn:get_off_me",
+		"breezeborn:gust_of_speed",
+		"breezeborn:full_force_blast"
 	],
 	"icon": "minecraft:end_rod",
 	"order": 69,
