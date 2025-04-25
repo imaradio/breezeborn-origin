@@ -1,0 +1,34 @@
+{
+	"type": "origins:multiple",
+	"name": "Made of Air",
+	"description": "Due to your airy composition, you are unable to wear armour, and are translucent.",
+
+	"model_colour": {
+		"type": "origins:model_color",
+		"alpha": 0.8
+	},
+	
+	"no_armour": {
+		"type": "origins:restrict_armor",
+		"head": {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 0
+		},
+		"chest": {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 0
+		},
+		"legs": {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 0
+		},
+		"feet": {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	}
+}

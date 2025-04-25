@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"breezeborn:made_of_air",
+		"breezeborn:constricted_form"
+	],
+	"icon": "minecraft:end_rod",
+	"order": 69,
+	"impact": 3,
+	"name": "Breezeborn",
+	"description": "description here"
+}

@@ -1,0 +1,55 @@
+{
+	"type": "origins:multiple",
+	"name": "Constricted Form",
+	"description": "You realised that it's easier to hold your form if you constrict to be 1.5 blocks tall.",
+
+	"size": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "scale delay set pehkui:height 0"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale delay set pehkui:width 0"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:height 0.75"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:width 0.75"
+				}
+			]
+		},
+		"entity_action_removed": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "scale delay set pehkui:height 20"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale delay set pehkui:width 20"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:height 1"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:width 1"
+				}
+			]
+		}
+	},
+
+	"shaking": {
+		"type": "origins:shaking"
+	}
+}
