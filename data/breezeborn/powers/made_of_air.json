@@ -69,27 +69,5 @@
 			"comparison": "<=",
 			"compare_to": 0.4
 		}
-	},
-
-	"invuln_when_walking_on_lava": {
-		"type": "origins:modify_damage_taken",
-		"bientity_condition": {
-			"type": "origins:target_condition",
-			"condition": {
-				"type": "origins:fluid_height",
-				"fluid": "minecraft:lava",
-				"comparison": "<=",
-				"compare_to": 0.4
-			}
-		},
-		"damage_condition": {
-			"type": "origins:name",
-			"name": "lava"
-		},
-		"modifier": {
-			"name": "immune to lava when walking on it",
-			"operation": "set_total",
-			"value": 0
-		}
 	}
 }

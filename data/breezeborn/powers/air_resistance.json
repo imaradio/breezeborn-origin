@@ -1,0 +1,35 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:area_of_effect",
+		"radius": 5,
+		"shape": "sphere",
+		"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:entity_type",
+					"entity_type": "minecraft:player"
+				},
+				"if_action": {
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slow_falling",
+						"duration": 10,
+						"amplifier": 255,
+						"is_ambient": true,
+						"show_particles": false,
+						"show_icon": false
+					}
+				}
+			}
+		}
+	},
+	"interval": 1,
+	"condition": {
+		"type": "origins:sneaking"
+	},
+	"name": "Air Resistance",
+	"description": "By using the air as an extention of yourself, you can hold people up, like an angel."
+}

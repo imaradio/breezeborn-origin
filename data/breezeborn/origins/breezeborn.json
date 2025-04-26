@@ -9,7 +9,8 @@
 		"breezeborn:static_charge",
 		"breezeborn:static_sprint",
 		"breezeborn:home_turf",
-		"breezeborn:wind_burst"
+		"breezeborn:wind_burst",
+		"breezeborn:air_resistance"
 	],
 	"icon": "minecraft:end_rod",
 	"order": 69,

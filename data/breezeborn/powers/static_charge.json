@@ -61,6 +61,12 @@
 				}
 			]
 		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_charge_resource",
+			"comparison": "==",
+			"compare_to": 1000
+		},
 		"key": {
 			"key": "key.saveToolbarActivator"
 		}
@@ -86,11 +92,24 @@
 						"actions": [
 							{
 								"type": "origins:execute_command",
+								"command": "attribute @s minecraft:generic.knockback_resistance modifier add 6c-2d-7f-b3-3a \"breezeborn, static charge hit\" 1 add"
+							},
+							{
+								"type": "origins:execute_command",
 								"command": "execute positioned as @s run summon minecraft:lightning_bolt ~ ~ ~"
 							},
 							{
 								"type": "origins:add_velocity",
-								"y": 2.2
+								"y": 2.2,
+								"set": true
+							},
+							{
+								"type": "origins:delay",
+								"ticks": 5,
+								"action": {
+									"type": "origins:execute_command",
+									"command": "attribute @s minecraft:generic.knockback_resistance modifier remove 6c-2d-7f-b3-3a"
+								}
 							}
 						]
 					}
