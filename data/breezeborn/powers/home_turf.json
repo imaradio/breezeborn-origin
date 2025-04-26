@@ -1,0 +1,20 @@
+{
+	"type": "origins:conditioned_attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.attack_damage",
+		"operation": "addition",
+		"value": 9,
+		"name": "home turf add 9 dmg"
+	},
+	"tick_rate": 2,
+	"condition": {
+		"type": "origins:in_block",
+		"block_condition": {
+			"type": "origins:height",
+			"comparison": ">=",
+			"compare_to": 100
+		}
+	},
+	"name": "Home Turf",
+	"description": "Originating in the sky, you're stronger when more than 100 blocks up."
+}

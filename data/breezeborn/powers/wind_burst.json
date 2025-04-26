@@ -1,0 +1,13 @@
+{
+	"type": "origins:action_when_hit",
+	"bientity_action": {
+		"type": "origins:target_action",
+		"action": {
+			"type": "origins:add_velocity",
+			"y": 0.5,
+			"z": 0.1
+		}
+	},
+	"name": "Wind Burst",
+	"description": "Being hit sends you away a bit."
+}

@@ -1,7 +1,7 @@
 {
 	"type": "origins:multiple",
 	"name": "Made of Air",
-	"description": "Due to your airy composition, you are unable to wear armour, and are translucent.",
+	"description": "Due to your airy composition, you are unable to wear armour, and are translucent. Your light nature makes you unable to willingly enter fluids, or take fall damage. Arrows pass straight through you.",
 
 	"model_colour": {
 		"type": "origins:model_color",
@@ -29,6 +29,67 @@
 			"type": "origins:armor_value",
 			"comparison": ">",
 			"compare_to": 0
+		}
+	},
+	
+	"dmg_immunity": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:name",
+					"name": "arrow"
+				},
+				{
+					"type": "origins:name",
+					"name": "fall"
+				}
+			]
+		}
+	},
+
+	"walk_on_water": {
+		"type": "origins:walk_on_fluid",
+		"fluid": "minecraft:water",
+		"condition": {
+			"type": "origins:fluid_height",
+			"fluid": "minecraft:water",
+			"comparison": "<=",
+			"compare_to": 0.4
+		}
+	},
+	
+	"walk_on_lava": {
+		"type": "origins:walk_on_fluid",
+		"fluid": "minecraft:lava",
+		"condition": {
+			"type": "origins:fluid_height",
+			"fluid": "minecraft:lava",
+			"comparison": "<=",
+			"compare_to": 0.4
+		}
+	},
+
+	"invuln_when_walking_on_lava": {
+		"type": "origins:modify_damage_taken",
+		"bientity_condition": {
+			"type": "origins:target_condition",
+			"condition": {
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:lava",
+				"comparison": "<=",
+				"compare_to": 0.4
+			}
+		},
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "lava"
+		},
+		"modifier": {
+			"name": "immune to lava when walking on it",
+			"operation": "set_total",
+			"value": 0
 		}
 	}
 }

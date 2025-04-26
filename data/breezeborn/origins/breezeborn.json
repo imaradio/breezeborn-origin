@@ -7,7 +7,9 @@
 		"breezeborn:full_force_blast",
 		"breezeborn:final_breath",
 		"breezeborn:static_charge",
-		"breezeborn:static_sprint"
+		"breezeborn:static_sprint",
+		"breezeborn:home_turf",
+		"breezeborn:wind_burst"
 	],
 	"icon": "minecraft:end_rod",
 	"order": 69,
