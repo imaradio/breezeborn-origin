@@ -69,5 +69,19 @@
 			"comparison": "<=",
 			"compare_to": 0.4
 		}
+	},
+
+	"invuln_when_walking_on_lava": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "lava"
+		},
+		"condition": {
+			"type": "origins:fluid_height",
+			"fluid": "minecraft:lava",
+			"comparison": "<=",
+			"compare_to": 0.4 
+		}
 	}
 }
