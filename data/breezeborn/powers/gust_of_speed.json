@@ -14,6 +14,6 @@
 		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
 		"bar_index": 16
 	},
-	"name": "Get off me !!!",
-	"description": "Send everything around you backwards."
+	"name": "A Gust of Speed",
+	"description": "Exhale behind yourself to launch forward."
 }

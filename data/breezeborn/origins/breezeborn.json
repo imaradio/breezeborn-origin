@@ -4,7 +4,10 @@
 		"breezeborn:constricted_form",
 		"breezeborn:get_off_me",
 		"breezeborn:gust_of_speed",
-		"breezeborn:full_force_blast"
+		"breezeborn:full_force_blast",
+		"breezeborn:final_breath",
+		"breezeborn:static_charge",
+		"breezeborn:static_sprint"
 	],
 	"icon": "minecraft:end_rod",
 	"order": 69,

@@ -1,0 +1,44 @@
+{
+	"type": "origins:action_over_time",
+	"rising_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:area_of_effect",
+				"radius": 3,
+				"shape": "sphere",
+				"bientity_action": {
+					"type": "origins:add_velocity",
+					"y": 1.8,
+					"z": -0.5
+				}
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "*:static_charge_attack_resource",
+				"change": 0,
+				"operation": "set"
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "*:static_charge_charge_resource",
+				"change": 0,
+				"operation": "set"
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "*:static_sprint_resource",
+				"change": 0,
+				"operation": "set"
+			}
+		]
+	},
+	"interval": 1,
+	"condition": {
+		"type": "origins:health",
+		"comparison": "==",
+		"compare_to": 0
+	},
+	"name": "Final Breath",
+	"description": "Your final breath is your fullest, launching others quite far."
+}

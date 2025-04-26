@@ -1,0 +1,105 @@
+{
+	"type": "origins:multiple",
+	"description": "sprint stuff for static_charge.json, split into separate file bc its easier to digest",
+	"hidden": true,
+
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 5,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_resource",
+				"comparison": "!=",
+				"compare_to": 0
+			}
+		}
+	},
+
+	"1": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": 0.04,
+			"name": "static charge increased sprint speed, lvl 1"
+		},
+		"tick_rate": 2,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_resource",
+			"comparison": ">=",
+			"compare_to": 1
+		}
+	},
+
+	"2": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": 0.04,
+			"name": "static charge increased sprint speed, lvl 2"
+		},
+		"tick_rate": 2,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_resource",
+			"comparison": ">=",
+			"compare_to": 2
+		}
+	},
+
+	"3": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": 0.04,
+			"name": "static charge increased sprint speed, lvl 3"
+		},
+		"tick_rate": 2,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_resource",
+			"comparison": ">=",
+			"compare_to": 3
+		}
+	},
+
+	"4": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": 0.04,
+			"name": "static charge increased sprint speed, lvl 4"
+		},
+		"tick_rate": 2,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_resource",
+			"comparison": ">=",
+			"compare_to": 4
+		}
+	},
+
+	"5": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": 0.04,
+			"name": "static charge increased sprint speed, lvl 5"
+		},
+		"tick_rate": 2,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_resource",
+			"comparison": ">=",
+			"compare_to": 5
+		}
+	}
+}
