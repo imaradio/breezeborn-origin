@@ -9,7 +9,7 @@
 				"shape": "sphere",
 				"bientity_action": {
 					"type": "origins:add_velocity",
-					"y": 0.6,
+					"y": 1.8,
 					"z": 1
 				}
 			},
@@ -41,5 +41,5 @@
 		"bar_index": 5
 	},
 	"name": "Get off me !!!",
-	"description": "Send everything around you backwards."
+	"description": "Send everything around you up up and away!"
 }

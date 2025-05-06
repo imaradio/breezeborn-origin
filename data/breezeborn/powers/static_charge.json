@@ -28,6 +28,14 @@
 		}
 	},
 
+	"lightning_invulnerability": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "lightningBolt"
+		}
+	},
+
 	"action_over_time": {
 		"type": "origins:action_over_time",
 		"entity_action": {

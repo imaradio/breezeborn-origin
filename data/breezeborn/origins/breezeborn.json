@@ -4,7 +4,6 @@
 		"breezeborn:constricted_form",
 		"breezeborn:get_off_me",
 		"breezeborn:gust_of_speed",
-		"breezeborn:full_force_blast",
 		"breezeborn:final_breath",
 		"breezeborn:static_charge",
 		"breezeborn:static_sprint",
@@ -16,5 +15,5 @@
 	"order": 69,
 	"impact": 3,
 	"name": "Breezeborn",
-	"description": "description here"
+	"description": "As an embodiment of air, you're born from all the magic that builds up in the atmosphere and has since fused with nearby clouds, now leaving §oyou§r behind."
 }
